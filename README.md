@@ -4,9 +4,9 @@
 
 Codex skill for reading remote sensing method-paper PDFs and generating a structured Chinese Markdown note package.
 
-The skill is tailored for papers on semantic segmentation, object detection, scene classification, change detection, crop mapping, crop yield estimation, and related remote-sensing ML/DL methods.
+This skill is mainly intended for remote sensing method papers.
 
-This skill is mainly intended for remote sensing method papers. It is less suitable for application-oriented papers, discovery-oriented studies, review papers, policy papers, or theory papers, and may produce incomplete or awkward notes for those paper types.
+It is less suitable for application-oriented papers, discovery-oriented studies, review papers, policy papers, or theory papers, and may produce incomplete or awkward notes for those paper types.
 
 ## What It Produces
 
