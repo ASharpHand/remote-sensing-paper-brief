@@ -1,0 +1,4 @@
+interface:
+  display_name: "Remote Sensing Paper Brief"
+  short_description: "Extract structured briefs from remote sensing method papers"
+  default_prompt: "Use $remote-sensing-paper-brief to read this remote sensing method paper PDF and create a slug-named Markdown note package with sourced key points and method figures."

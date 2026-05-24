@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*$py.class
+
+.venv/
+venv/
+env/
+
+.DS_Store
+Thumbs.db
+
+*.log
+
+# Generated paper-note outputs. Keep these scoped so future skill assets are not hidden.
+paper-notes-output/
+**/*.pdf
