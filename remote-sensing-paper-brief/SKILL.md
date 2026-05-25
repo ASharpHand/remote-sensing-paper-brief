@@ -27,13 +27,31 @@ Use Chinese-only wording for user-facing section headings where natural. In part
 
 ## Python Dependency Setup
 
-Before reading a PDF with Python, check whether the needed packages are installed. Use:
+Before reading a PDF with Python, initialize or update the dedicated skill venv:
 
 ```bash
 python <skill-dir>/scripts/setup_deps.py
 ```
 
-This installs packages from `scripts/requirements.txt` when they are missing. If installation fails because package downloads require network access, ask for approval and rerun the same setup command according to the active environment's permission rules.
+The setup script creates or reuses a Python standard library `venv` at:
+
+```text
+~/.codex/skill-envs/remote-sensing-paper-brief/.venv
+```
+The venv must be created with Python 3.10 or later. If the default `python` is too old, the setup script tries common Python launcher commands such as `py -3.12`, `py -3.11`, `py -3.10`, `python3.12`, `python3.11`, and `python3.10`. A specific interpreter can also be provided with:
+
+```bash
+python <skill-dir>/scripts/setup_deps.py --python <path-to-python-3.10+>
+```
+
+After the environment exists, do not use bare `python` for bundled helper scripts. Resolve `<skill-python>` by using:
+
+```text
+Windows: ~/.codex/skill-envs/remote-sensing-paper-brief/.venv/Scripts/python.exe
+macOS/Linux: ~/.codex/skill-envs/remote-sensing-paper-brief/.venv/bin/python
+```
+
+Use `<skill-python>` for all skill Python scripts, including PDF text extraction checks and figure rendering. If the venv is missing or packages are missing, rerun `python <skill-dir>/scripts/setup_deps.py`. If installation fails because package downloads require network access, ask for approval and rerun the same setup command according to the active environment's permission rules.
 
 Use these packages for PDF work:
 
