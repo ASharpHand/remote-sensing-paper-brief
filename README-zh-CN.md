@@ -55,11 +55,16 @@ remote-sensing-paper-brief/
 
 新手推荐方式：
 
+1.Codex App创建文献阅读项目文件夹
+2.在对话框中输入: '[ASharpHand/remote-sensing-paper-brief](https://github.com/ASharpHand/remote-sensing-paper-brief)仓库的内层 remote-sensing-paper-brief 文件夹是 Codex skill，安装到本机 Codex skills 目录，并校验是否可用。'
+
+本地安装方式：
+
 1. 下载整个仓库。
 2. 在 Codex App 中打开下载后的文件夹。
 3. 告诉 Codex：`这个仓库的内层 remote-sensing-paper-brief 文件夹是 Codex skill，请帮我安装到本机 Codex skills 目录，并校验是否可用。`
 
-手动安装方式：
+古法手动方式：
 
 将内层 skill 文件夹复制到 Codex skills 目录：
 
