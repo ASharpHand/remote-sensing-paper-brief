@@ -118,6 +118,10 @@ Use $remote-sensing-paper-brief to read this remote sensing method paper PDF and
 
 如果你是第一次使用 Codex skill，可以阅读 [🔗 从 0 开始使用 Remote Sensing Paper Brief](GETTING-STARTED-zh-CN.md)。这份指南会从安装 Codex 开始，介绍如何安装本 skill、准备论文 PDF、生成第一份 Markdown 笔记，以及处理常见问题。
 
+## 致谢
+
+特别感谢 [Zhewei Zhang](https://github.com/Ar9av/PaperOrchestra) 为本项目提供宝贵的产品反馈、功能建议和测试支持。
+
 ## 反馈
 
 如果你有任何需求、建议或问题，欢迎提交 issue。

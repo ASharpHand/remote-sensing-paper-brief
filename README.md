@@ -118,6 +118,10 @@ Natural-language invocation examples:
 
 If you are new to Codex skills, see [🔗 从 0 开始使用 Remote Sensing Paper Brief](GETTING-STARTED-zh-CN.md). It walks through installing Codex, installing this skill, preparing a PDF, generating the first Markdown note, and troubleshooting common issues.
 
+## Acknowledgements
+
+Special thanks to [Zhewei Zhang](https://github.com/Ar9av/PaperOrchestra) for valuable product feedback, feature suggestions, and testing support.
+
 ## Feedback
 
 If you have any needs, suggestions, or problems, feel free to open an issue.
