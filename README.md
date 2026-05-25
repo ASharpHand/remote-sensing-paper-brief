@@ -120,7 +120,7 @@ If you are new to Codex skills, see [🔗 从 0 开始使用 Remote Sensing Pape
 
 ## Acknowledgements
 
-Special thanks to [Zhewei Zhang](https://github.com/Ar9av/PaperOrchestra) for valuable product feedback, feature suggestions, and testing support.
+Special thanks to [Zhewei Zhang](https://github.com/rs-pawn) for valuable product feedback, feature suggestions, and testing support.
 
 ## Feedback
 

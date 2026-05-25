@@ -120,7 +120,7 @@ Use $remote-sensing-paper-brief to read this remote sensing method paper PDF and
 
 ## 致谢
 
-特别感谢 [Zhewei Zhang](https://github.com/Ar9av/PaperOrchestra) 为本项目提供宝贵的产品反馈、功能建议和测试支持。
+特别感谢 [Zhewei Zhang](https://github.com/rs-pawn) 为本项目提供宝贵的产品反馈、功能建议和测试支持。
 
 ## 反馈
 
