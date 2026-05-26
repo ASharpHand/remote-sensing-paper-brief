@@ -17,6 +17,26 @@ Use `references/brief-template.md` as the default structure unless the user prov
 
 Use Chinese as the main narrative language. Avoid unnecessary Chinese-English mixing. Translate ordinary prose, section explanations, experiment descriptions, and discussion points into natural Chinese.
 
+Preserve mathematical notation throughout the entire final Markdown note. Optimize math output for common Markdown readers used by the user: VS Code, Obsidian, and Typora. This applies to all sections, tables, bullet lists, captions, method explanations, experiment metrics, formulas, variables, dimensions, units, thresholds, hyperparameters, and numeric expressions. When the paper contains symbols, formulas, variables, superscripts, subscripts, Greek letters, or metric expressions, write them as Markdown math instead of flattened plain text.
+
+- Use single-dollar inline math for short symbols and values, because it is the most compatible inline style across VS Code math preview/extensions, Obsidian, and Typora. Examples: `$f_{\theta A}$`, `$x_i$`, `$R^2$`, `$10^{-4}$`, `$N \times C \times H \times W$`, `$\lambda_1$`, and `$m^2$`.
+- Use double-dollar display math for standalone formulas when the formula is important enough to keep:
+
+```markdown
+$$
+\mathcal{L}_{total}=\mathcal{L}_{ce}+\lambda\mathcal{L}_{dice}
+$$
+```
+
+- Do not output flattened forms such as `f_thetaA`, `x_i` outside math mode, `R2`, `10-4`, `lambda1`, `m2`, or `N x C x H x W` when they represent mathematical notation.
+- Do not use `\(...\)` inline delimiters in the final note unless the user explicitly asks for MathJax-style delimiters, because Typora and some VS Code setups may show them as raw text.
+- Keep inline formulas compact and avoid spaces immediately inside the dollar delimiters: write `$p_i(c)$`, not `$ p_i(c) $`.
+- When inline math appears next to Chinese or English punctuation, keep the punctuation outside the math delimiters: `类别 $c$，其中 $c \in \{1,\ldots,C\}$。`
+- Escape literal braces inside set notation when needed, for example `$c \in \{1,\ldots,C\}$` instead of `$c\in{1,\ldots,C}$`.
+- Avoid using dollar delimiters for currency or ordinary prose. If a literal dollar sign is needed, escape it as `\$`.
+- If PDF text extraction flattens notation, reconstruct obvious Markdown math from the surrounding paper context whenever it can be done confidently.
+- If the exact formula or symbol cannot be reconstructed confidently, describe it in words and mark the notation as uncertain instead of inventing a formula.
+
 Keep English only for official paper titles, dataset names, model/module/method names, product names, software/platform names, sensor names, metric abbreviations, and terms whose English form is a named concept in the paper. For common technical terms, use Chinese first and optionally keep English in parentheses on first mention; after first mention, prefer the Chinese term unless the English term is a proper noun or clearer.
 
 Use `references/remote-sensing-glossary.md` for common remote sensing and machine-learning term translations when wording matters. When a term appears in the glossary, use the glossary translation by default. Do not replace it with another common translation unless the user explicitly asks or the paper defines a different official Chinese term. Do not force every English term into Chinese if the glossary or paper context suggests preserving the original name.
