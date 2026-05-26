@@ -45,6 +45,7 @@ For each major section of the note, include evidence anchors from the paper when
 
 - Section anchors: use the paper's official section numbering at the smallest identifiable formal section level, such as `Abstract`, `Section 1`, `Section 3.2`, or `Section 4.1.2.3`. Do not artificially truncate the section level when the paper has deeper numbered subsections.
 - Figure and table anchors: use only `Fig. X` or `Table X` when the source is a figure or table.
+- Normalize section, figure, and table numbers to Arabic numerals in the final note whenever the conversion is reliable. For example, write `Section 4`, `Section 4.1`, `Section 4.1.2`, and `Table 1` instead of `Section IV`, `Section IV-A`, `Section IV-A-2`, and `Table I`. Figure numbers should also use Arabic numerals, but keep explicit subfigure labels when the paper itself names them, such as `Fig. 3 (a)` or `Fig. 3 (b)`. Do not invent subfigure labels from visual layout alone.
 - Multiple anchors: separate them with Chinese semicolons, for example `依据：Section 3.2；Fig. 4；Table 2`.
 - Forbidden final-note anchors: page numbers, PDF page positions, paragraph numbers, line numbers, crop regions, or wording such as `p.2`, `page 6`, `第 3 页`, `paragraph 2`, or `line 10`.
 

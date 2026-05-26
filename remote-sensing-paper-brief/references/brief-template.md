@@ -1,5 +1,7 @@
 # Remote Sensing Paper Brief Template
 
+<!-- 依据格式：使用“依据：”；章节/图/表编号尽量统一为阿拉伯数字，如 Section 4.1、Fig. 3 (a)、Table 1；只有原文明示子图 (a)/(b) 时才保留子图标记。 -->
+
 ## 0. Paper
 
 - Title:
