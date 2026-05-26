@@ -41,7 +41,14 @@ Keep English only for official paper titles, dataset names, model/module/method 
 
 Use `references/remote-sensing-glossary.md` for common remote sensing and machine-learning term translations when wording matters. When a term appears in the glossary, use the glossary translation by default. Do not replace it with another common translation unless the user explicitly asks or the paper defines a different official Chinese term. Do not force every English term into Chinese if the glossary or paper context suggests preserving the original name.
 
-For each major section of the note, include source anchors from the paper whenever available: section name, page number, figure number, or table number. Use `Source:` lines or source columns in tables. This is required for background/significance, prior-study limitations, research content, contributions, study area/data, method figures, method explanation, experiment results, discussion topics, limitations, and future work.
+For each major section of the note, include evidence anchors from the paper whenever available. Use only Chinese user-facing labels: write `依据：` lines after paragraphs or use a final table column named `依据`. Do not use `Source:`, `Source`, or mixed labels such as `Source / 推断依据` in the final note. Evidence anchors should follow these formats:
+
+- Section anchors: use the paper's official section numbering at the smallest identifiable formal section level, such as `Abstract`, `Section 1`, `Section 3.2`, or `Section 4.1.2.3`. Do not artificially truncate the section level when the paper has deeper numbered subsections.
+- Figure and table anchors: use only `Fig. X` or `Table X` when the source is a figure or table.
+- Multiple anchors: separate them with Chinese semicolons, for example `依据：Section 3.2；Fig. 4；Table 2`.
+- Forbidden final-note anchors: page numbers, PDF page positions, paragraph numbers, line numbers, crop regions, or wording such as `p.2`, `page 6`, `第 3 页`, `paragraph 2`, or `line 10`.
+
+Evidence anchors are required for background/significance, prior-study limitations, research content, contributions, study area/data, method figures, method explanation, experiment results, discussion topics, limitations, and future work.
 
 Use Chinese-only wording for user-facing section headings where natural. In particular, avoid English in headings for the research problem/gap/contribution section, the method section, method subsections, and the discussion section. Keep English terms inside body text only when they are official names, abbreviations, or clearer technical terms.
 
@@ -236,8 +243,8 @@ Extract:
 - Mark missing information as "未明确说明" instead of guessing.
 - If a statement is inferred rather than explicitly stated, label it as "推断" and explain the basis briefly.
 - Do not fill template cells with plausible domain defaults. Leave them as "未明确说明" when the paper does not provide the information.
-- Attach source anchors to extracted facts. Prefer precise anchors such as `Abstract`, `Introduction p.2`, `Fig. 4`, or `Table 3`; use broader anchors only when exact pages or numbers are unavailable.
-- Preserve page/figure/table numbers when available.
+- Attach evidence anchors to extracted facts. Prefer precise anchors such as `Abstract`, `Section 2.1`, `Fig. 4`, or `Table 3`; use broader official section anchors only when exact numbered subsections, figures, or tables are unavailable.
+- Preserve section/figure/table numbers when available, but do not include page, paragraph, line, or PDF-position anchors in the final note.
 - Prefer exact metric names and numeric values over vague statements like "效果较好".
 - Distinguish "dataset" from "data source"; a paper may use public datasets, self-built datasets, and raw satellite/statistical/field data at the same time.
 - Mention whether the paper is mainly an algorithm benchmark paper, a regional application paper, or a hybrid of both.
