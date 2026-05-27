@@ -27,6 +27,7 @@ The note focuses on:
 - method workflow, architecture, module explanations, and loss function summary
 - experiments and accuracy results
 - discussion, limitations, and future work
+- reusable data, paper-produced data, and code links or references
 - source anchors for key facts
 
 Only method-related figures are saved, such as technical routes, workflows, architectures, and module diagrams. Ordinary result charts, statistical plots, confusion matrices, and qualitative maps are not saved unless they also explain the method structure.

@@ -49,7 +49,7 @@ For each major section of the note, include evidence anchors from the paper when
 - Multiple anchors: separate them with Chinese semicolons, for example `依据：Section 3.2；Fig. 4；Table 2`.
 - Forbidden final-note anchors: page numbers, PDF page positions, paragraph numbers, line numbers, crop regions, or wording such as `p.2`, `page 6`, `第 3 页`, `paragraph 2`, or `line 10`.
 
-Evidence anchors are required for background/significance, prior-study limitations, research content, contributions, study area/data, method figures, method explanation, experiment results, discussion topics, limitations, and future work.
+Evidence anchors are required for background/significance, prior-study limitations, research content, contributions, study area/data, method figures, method explanation, experiment results, discussion topics, limitations, future work, and data/code resource entries. For section 8 `数据与代码资源`, verify the evidence for each listed entry internally, but do not add an `依据` column to the section 8 tables unless the user explicitly asks for it.
 
 Use Chinese-only wording for user-facing section headings where natural. In particular, avoid English in headings for the research problem/gap/contribution section, the method section, method subsections, and the discussion section. Keep English terms inside body text only when they are official names, abbreviations, or clearer technical terms.
 
@@ -237,6 +237,41 @@ Extract:
 - future work proposed by the authors
 - reader-facing concerns or caveats that matter for reusing the method
 
+### 8. Extract data and code resources
+
+Create section 8 named `数据与代码资源` as a concise resource entry point for readers, not as another data-comparison or materials-analysis section. Use three subsections:
+
+- `8.1 可复用数据来源`
+- `8.2 本文产出数据`
+- `8.3 代码资源`
+
+Each subsection table must contain only these columns: `名称`, `类型`, and `链接或引用`. Do not add an `依据` column to these tables, even though every listed entry must be supported by the paper.
+
+For `8.1 可复用数据来源`, list data resources that readers may need to trace, cite, download, or reuse, such as public datasets, public data products, statistical data, administrative or socioeconomic data, benchmark datasets, sample libraries, label sources, and other non-ordinary data resources. Do not list data access platforms or processing platforms themselves, such as Google Earth Engine, unless the platform page is the only paper-provided access point for a specific dataset or product. Do not list ordinary raw remote sensing imagery or standard imagery products such as routine Landsat, Sentinel, MODIS, or Landsat Level-2 SR entries by default, because readers generally know how to find them. Include remote sensing resources only when the paper uses a named dataset, benchmark, curated data product, published map product, or otherwise treats that resource as a key reusable dataset/product rather than ordinary imagery input. Do not list the authors' private field-survey or internal data by default in this subsection.
+
+For `8.2 本文产出数据`, list data products created, constructed, generated, released, or provided by the paper, such as new datasets, labels, maps, prediction products, sample libraries, benchmark splits, supplementary datasets, regional products, or year-specific products. These signals may appear outside the data section, so specifically inspect the final sentences of the Abstract, the final paragraphs or contribution list of the Introduction, and the final paragraph of the Conclusion.
+
+For `8.3 代码资源`, list only official code access points, such as code repositories, GitHub/GitLab links, GEE scripts, software packages, project pages, or supplementary-material code. Do not list model weights as a separate entry; if weights are part of the official code repository, the repository link is sufficient. If the paper states that code is available on request, not yet released, or unavailable, record that status concisely.
+
+Use this search order for section 8:
+
+1. Inspect the final sentences of the Abstract for release/provision signals such as datasets, data products, maps, code, or benchmarks.
+2. Inspect the final paragraphs of the Introduction and any explicit contribution list for resources the authors construct, release, provide, or publish.
+3. Inspect the final paragraph of the Conclusion for data, product, or code availability statements.
+4. Inspect Data Availability, Code Availability, Data and Code Availability, Availability of data and materials, Supplementary Materials, Acknowledgements, and similar end-matter sections.
+5. Search the extracted full text for link-like or repository terms such as `http://`, `https://`, `doi.org`, `github.com`, `gitlab`, `zenodo`, `figshare`, `dryad`, `osf`, `gee`, `code`, `dataset`, and `data availability`. For each hit, read the surrounding context and classify the link as reusable data, paper-produced data, code resource, software/tool reference, data or processing platform page, ordinary citation, or unrelated link.
+6. Return to Data, Dataset, Materials, Experimental Setup, Methods, and Experiments sections to confirm how each candidate resource is used in the paper.
+7. If a data resource has no URL/DOI/project link but the paper cites a data-product or dataset reference, find the corresponding item in References and copy the complete reference entry into `链接或引用`. Do not replace it with only an author-year shorthand or reference number.
+
+For `链接或引用`, use this priority:
+
+1. If the paper gives a URL, DOI, data portal, GitHub/GitLab repository, project page, or similar access point, write that link.
+2. If no link is given but a data-product or dataset reference is given, copy the complete matching reference entry from the References section.
+3. If only a name is given and no link or identifiable reference is available, write `未给出`.
+4. Do not search the internet to add missing links unless the user explicitly requests external link completion.
+
+If a subsection has no confirmed entries, write a single row such as `| 未明确说明 | | 未给出 |`. Do not invent resources or fill the tables with plausible domain defaults.
+
 ## Quality Rules
 
 - Ground every major claim in the PDF section where it was found.
@@ -248,6 +283,8 @@ Extract:
 - Preserve section/figure/table numbers when available, but do not include page, paragraph, line, or PDF-position anchors in the final note.
 - Prefer exact metric names and numeric values over vague statements like "效果较好".
 - Distinguish "dataset" from "data source"; a paper may use public datasets, self-built datasets, and raw satellite/statistical/field data at the same time.
+- Keep section 8 focused on reusable data and code entry points. Do not duplicate every data source from section 3, do not list general platforms such as Google Earth Engine, and do not list ordinary raw remote sensing imagery or standard imagery products unless they are named datasets, benchmarks, curated data products, published map products, or key reusable resources in the paper.
+- For section 8 references, copy the complete reference entry when a dataset or data product is cited without a direct link.
 - Mention whether the paper is mainly an algorithm benchmark paper, a regional application paper, or a hybrid of both.
 - Keep the final brief focused; do not produce a full translation unless explicitly requested.
 
