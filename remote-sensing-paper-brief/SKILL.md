@@ -141,14 +141,14 @@ Read the Introduction for:
 - research background and significance
 - limitations of existing studies
 - what the paper proposes or studies
-- the paper's explicitly stated contributions, innovations, or main contributions
+- the paper's explicitly stated contributions, innovations, or main contributions in the Introduction only
 
 In the final note, section 2 must be named `概述` and use this structure:
 
 - `2.1 研究背景与意义`: one concise sentence only.
 - `2.2 已有研究的不足`: summarize the limitations or gaps stated by the paper.
 - `2.3 研究内容`: usually based on explicit wording such as "we propose...", "this study proposes...", or "we develop..."; translate and briefly restate it in one concise sentence, staying close to the paper's wording.
-- `2.4 本文的贡献`: if the paper explicitly lists contributions, innovations, or main contributions, preserve the exact number of listed items and briefly translate/summarize each item without changing the count. If the paper does not explicitly list contributions, label the subsection as a summary by the reader/agent and summarize cautiously from the Introduction.
+- `2.4 本文的贡献`: source this subsection only from Chapter/Section 1, the Introduction. If the Introduction explicitly lists contributions, innovations, or main contributions, preserve the exact number of listed items and briefly translate/summarize each item without changing the count. If the Introduction does not explicitly list contributions, label the subsection as a summary by the reader/agent and summarize cautiously from the Introduction. Do not use the Abstract, Conclusion, Discussion, method sections, experiments, or any other section to find or infer contributions.
 
 ### 3. Extract study area, time range, datasets, and data
 
