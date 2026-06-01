@@ -15,6 +15,8 @@ This skill is mainly designed for remote sensing method papers. It may be less s
 
 Use `references/brief-template.md` as the default structure unless the user provides a different format. Keep the report concise, but preserve exact technical names, dataset names, sensor/product names, model names, metrics, and numeric results.
 
+In final Markdown notes, bold field labels at the start of body list items, including the colon, for example `- **大方向：**`, `- **依据：**`, and `- **Paper type:** algorithm benchmark`. Do not add extra bold formatting to Markdown section headings or table headers.
+
 Use Chinese as the main narrative language. Avoid unnecessary Chinese-English mixing. Translate ordinary prose, section explanations, experiment descriptions, and discussion points into natural Chinese.
 
 Preserve mathematical notation throughout the entire final Markdown note. Optimize math output for common Markdown readers used by the user: VS Code, Obsidian, and Typora. This applies to all sections, tables, bullet lists, captions, method explanations, experiment metrics, formulas, variables, dimensions, units, thresholds, hyperparameters, and numeric expressions. When the paper contains symbols, formulas, variables, superscripts, subscripts, Greek letters, or metric expressions, write them as Markdown math instead of flattened plain text.
