@@ -126,7 +126,10 @@ Use $remote-sensing-paper-brief to read this remote sensing method paper PDF and
 
 ## 致谢
 
-特别感谢 [Zhewei Zhang](https://github.com/rs-pawn) 为本项目提供宝贵的产品反馈、功能建议和测试支持。
+特别感谢以下贡献者为本项目提供的宝贵支持：
+
+- [Zhewei Zhang](https://github.com/rs-pawn)：优化了虚拟环境部分的逻辑，并提供了产品反馈、功能建议和测试支持。
+- [Bowen Niu](https://github.com/MrSuperNiu)（牛博文）：对模板中第八章数据相关章节提出了建议，优化了整个模板的排版细节，并为本 skill 未来的优化方向提供了建议。
 
 ## 反馈
 

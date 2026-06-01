@@ -121,7 +121,10 @@ If you are new to Codex skills, see [🔗 从 0 开始使用 Remote Sensing Pape
 
 ## Acknowledgements
 
-Special thanks to [Zhewei Zhang](https://github.com/rs-pawn) for valuable product feedback, feature suggestions, and testing support.
+Special thanks to the following contributors for their valuable support:
+
+- [Zhewei Zhang](https://github.com/rs-pawn): optimized the virtual environment setup logic and provided product feedback, feature suggestions, and testing support.
+- [Bowen Niu](https://github.com/MrSuperNiu) (牛博文): suggested improvements for the data-related section in Chapter 8 of the template, improved template layout details, and suggested future optimization directions for this skill.
 
 ## Feedback
 
